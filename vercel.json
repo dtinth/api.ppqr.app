@@ -1,8 +1,12 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/([\\d\\.]+)",
-      "dest": "/api/image?amount=$1"
+      "source": "/([\\d]+)",
+      "destination": "/api/image?id=$1"
+    },
+    {
+      "source": "/([\\d]+)/([\\d\\.]+)",
+      "destination": "/api/image?id=$1&amount=$2"
     }
   ]
 }
