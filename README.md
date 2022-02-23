@@ -1,8 +1,3 @@
-# pay
+# api.ppqr.app
 
-A web service that generates a PromptPay QR
-
-Environment variables:
-
-- `PROMPTPAY_ID` - PromptPay ID
-- `PROMPTPAY_NAME` - PromptPay payee name
+A service that generates PromptPay QR codes.
