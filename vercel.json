@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/([\\d\\.]+)",
+      "dest": "/api/image?amount=$1"
+    }
+  ]
+}
