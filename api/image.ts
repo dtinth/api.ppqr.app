@@ -70,6 +70,10 @@ export default async function (req: VercelRequest, res: VercelResponse) {
     };
     drawText(topText, 32);
     drawText(bottomText, size - 16);
+    res.setHeader(
+      'Cache-Control',
+      `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`
+    );
     res.setHeader("Content-Type", "image/png");
     const dataUrl = canvas.toDataURL("image/png");
     res.send(Buffer.from(dataUrl.split(",")[1], "base64"));
