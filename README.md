@@ -15,3 +15,7 @@ A service that generates PromptPay QR codes.
 
 - The generated QR code has a generous amount of padding, making it [suitable for sending via Facebook Messenger](https://user-images.githubusercontent.com/193136/155515054-8313aca6-528f-4084-8d1b-3681b599a1ae.png).
 - Text can be added to indicate the name of the recipient.
+
+## Use case
+
+You can set up a redirect from, e.g. `pay.mydomain.me/123` to `https://api.ppqr.app/0900000000/123` to conveniently send people your PromptPay QR code.
